@@ -1,0 +1,22 @@
+  @font-face{
+    font-family: musi;
+    src: url(musinsa-Medium.ttf)
+  }
+  *{margin: 0;}
+  .musinsa {
+    color: #ffffff;
+    font-family: musi;
+    font-size: 32px;
+    position: fixed;
+    width: 100%;
+    top: 35px;
+    text-align: center;
+
+
+  }
+   .gnb{
+    box-sizing: border-box;
+    background-color: #000000;
+    height: 150px;
+    position: relative;
+  }
