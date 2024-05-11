@@ -2,6 +2,10 @@
     font-family: musi;
     src: url(musinsa-Medium.ttf)
   }
+  @font-face{
+    font-family: Pre;
+    src: url(PretendardVariable.ttf);
+  }
   *{margin: 0;}
   .musinsa {
     color: #ffffff;
@@ -25,7 +29,7 @@
     justify-content: center; /* 메인축 방향 가운데 정렬 */
     gap: 60px;
   }
-  .container{
+  .container{/* 상단 메인카테고리*/
     font-family: musi;
     font-size: 16px;
     color: rgb(255, 255, 255);
@@ -35,18 +39,17 @@
     width: 100%;
     z-index: 1;
     }
-    .gradien{
+    .gradien{/* 상단 배경그라디언트 */
       background-image: radial-gradient(circle, #272c30,#111111,#000000); /* Radial 그라데이션 적용 */
       width: 100%;
-      position: relative;
+      position: absolute;
+      margin-top: 0;
       top: 0;
       left: 0;
-      height: 930px;
+      height: 1080px;
+      z-index: -1;
     }
-    .Ai01{
-      z-index: 1
-    }
-    .container2 {
+    .container2 { /* 상단ai 추천상품 */
       display: flex;
       position: absolute;
       width: 100%;
@@ -62,4 +65,49 @@
       } 
       margin-left: 115px;
     }
-  
+      .Setter{ /* 상단ai 상품항목  */
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 587px;
+        color: #ffffff;
+        margin-left: 132px;
+        z-index: 2;
+          .setter:nth-child(1){
+            font-family: pre;
+            font-size: 32px;
+            font-weight: 600;
+          }
+          .setter:nth-child(2){
+            font-family: pre;
+            font-size: 24px;
+            margin-top: 5px;
+            font-weight: 500;
+          }
+          .setter:nth-child(3){
+            font-family: pre;
+            font-size: 16px;
+            margin-top: 3px;
+            font-weight: 400;
+          }
+          .line-box { /* 상단 자세히보기박스  */
+            width: 100px; /* 너비 */
+            height: 40px; /* 높이 */
+            border: 2px solid #2405aa; /* 테두리 두께와 색상 */
+            border-radius: 8px; /* 라운드 값 */
+            position: absolute;
+            z-index: 5;
+            top: 707px;
+            width: 100%;
+          }
+          .line-gradient {
+            width: 100%;
+            height: 2px; 
+            background-image: linear-gradient(to right, rgba(0,0,0,0), #1142e5, rgba(0,0,0,0));
+            position: fixed;
+            z-index: 5;
+          }
+          
+          
+      }
