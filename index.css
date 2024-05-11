@@ -7,7 +7,7 @@
     color: #ffffff;
     font-family: musi;
     font-size: 32px;
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 35px;
     text-align: center;
@@ -16,7 +16,50 @@
   }
    .gnb{
     box-sizing: border-box;
-    background-color: #000000;
+    background-color: #111111;
     height: 150px;
     position: relative;
   }
+  .container {
+    display: flex;
+    justify-content: center; /* 메인축 방향 가운데 정렬 */
+    gap: 60px;
+  }
+  .container{
+    font-family: musi;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 103px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    }
+    .gradien{
+      background-image: radial-gradient(circle, #272c30,#111111,#000000); /* Radial 그라데이션 적용 */
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 930px;
+    }
+    .Ai01{
+      z-index: 1
+    }
+    .container2 {
+      display: flex;
+      position: absolute;
+      width: 100%;
+      top: 247px;
+      font-size: 45px;
+      font-family: musi;
+      gap: 10px;
+      .itemai{
+        color: #0066FF;
+      }
+      .itemai2{
+        color: #ffffff;
+      } 
+      margin-left: 115px;
+    }
+  
