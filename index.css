@@ -1,6 +1,7 @@
 body{
   overflow-x: hidden;
 }
+
 @font-face{
   font-family: musi;
   src: url(./font/musinsa-Medium.ttf)
@@ -10,6 +11,7 @@ body{
   src: url(./font/PretendardVariable.ttf);
 }
 *{margin: 0;}
+
 .musinsa {
   color: #ffffff;
   font-family: musi;
@@ -18,20 +20,24 @@ body{
   width: 100%;
   top: 35px;
   text-align: center;
-
-
 }
+
+
  .gnb{
   box-sizing: border-box;
   background-color: #111111;
   height: 150px;
   position: relative;
 }
+
+
 .container { /* 상단 메인카테고리*/
   display: flex;
   justify-content: center; /* 메인축 방향 가운데 정렬 */
   gap: 60px;
 }
+
+
 .container{ /* 상단 메인카테고리 세부속성*/
   font-family: musi;
   font-size: 16px;
@@ -45,11 +51,11 @@ body{
   .gradien{/* 상단 배경그라디언트 */
     background-image: radial-gradient(circle, #272c30,#111111,#000000); /* Radial 그라데이션 적용 */
     width: 100%;
-    position: absolute;
+    position: static;
     margin-top: 0;
     top: 0;
     left: 0;
-    height: 1080px;
+    height: 930px;
     z-index: -1;
   }
   .container2 { /* 상단ai 추천상품 */
@@ -94,8 +100,9 @@ body{
           margin-top: 3px;
           font-weight: 400;
         }
-
     }
+
+
     .line-box { /* 상단 자세히보기박스  */
       align-items: center;
       justify-content: center;
@@ -115,6 +122,8 @@ body{
       color: #ffffff;
       /* border: 3px solid #ff0000; */
     }
+
+
     .gradient-box{ /* 상단 그라디언트 라인 플렉스박스 */
       display: flex;
       position: absolute;
@@ -129,7 +138,44 @@ body{
       width: 800px;
       height: 2px; 
       background-image: linear-gradient(to right, rgba(0,0,0,0), #ffffff, rgba(0,0,0,0));
-      z-index: 5;
+      z-index: 1;
       /* border: 3px solid #ff0000; */
     }
-    
+
+    .img1{
+      /* border: 3px solid #ff0; */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      /* margin: 0 auto; */
+      width: 615px;
+      height: 839px;
+      z-index: 2;
+      margin-top: 180px;
+    }
+    .img1>img{
+      width: 100%;
+    }
+
+    .Mainscreen2{
+      margin-top: 140px;
+    }
+.flex1{
+  /* border: 3px solid #ff0000; */
+  color: #ffffff;
+  display: flex;
+  gap: 10px;
+  position: static;
+  padding-left: 187px;
+}
+.itembox1{
+  font-family: musi;
+  font-size: 32px;
+  color: #0066FF;
+}
+.itembox1:nth-child(2){
+  font-family: musi;
+  font-size: 32px;
+  color: #000000;
+}
