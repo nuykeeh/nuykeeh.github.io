@@ -12,6 +12,16 @@ body{
 }
 *{margin: 0;}
 
+::-webkit-scrollbar {
+  display: none;
+}
+.Mainscreen1{
+  display: block;
+  width: 100%;
+  height: 1080px;
+  /* border: 2px solid #ff0000; */
+}
+
 .musinsa {
   color: #ffffff;
   font-family: musi;
@@ -48,6 +58,7 @@ body{
   width: 100%;
   z-index: 1;
   }
+
   .gradien{/* 상단 배경그라디언트 */
     background-image: radial-gradient(circle, #272c30,#111111,#000000); /* Radial 그라데이션 적용 */
     width: 100%;
@@ -83,25 +94,25 @@ body{
       color: #ffffff;
       margin-left: 132px;
       z-index: 2;
-        .setter:nth-child(1){
-          font-family: pre;
-          font-size: 32px;
-          font-weight: 600;
-        }
-        .setter:nth-child(2){
-          font-family: pre;
-          font-size: 24px;
-          margin-top: 5px;
-          font-weight: 500;
-        }
-        .setter:nth-child(3){
-          font-family: pre;
-          font-size: 16px;
-          margin-top: 3px;
-          font-weight: 400;
-        }
-    }
 
+    }
+    .setter:nth-child(1){
+      font-family: pre;
+      font-size: 32px;
+      font-weight: 600;
+    }
+    .setter:nth-child(2){
+      font-family: pre;
+      font-size: 24px;
+      margin-top: 5px;
+      font-weight: 500;
+    }
+    .setter:nth-child(3){
+      font-family: pre;
+      font-size: 16px;
+      margin-top: 3px;
+      font-weight: 400;
+    }
 
     .line-box { /* 상단 자세히보기박스  */
       align-items: center;
@@ -122,7 +133,43 @@ body{
       color: #ffffff;
       /* border: 3px solid #ff0000; */
     }
+    .navi-barbox{
+      display: flex;
+      /* flex-direction: row; */
+      background-color: #ffffff;
+      position: absolute;
+      width: 80%;
+      height: 4px;
+      left: 132px;
+      top: 986px;
+      /* border: 3px solid #ff0000; */
+    }
+    
+    .navigationbar{
+      align-items: center;
+      width: 20%;
+      height:4px;
+      justify-content: center;
+      position: relative;
+      /* border: 3px solid #ff0000; */
+      background-color: #0066FF;
+    }
+    .navigationbar2{
+      align-items: center;
+      width: 100%;
+      height:4px;
+      justify-content: center;
+      position: relative;
+      /* border: 3px solid #ff0000; */
+      background-color: #ffffff;
+    }
 
+    /* .line-navigationbar{
+      height: 2px;
+      width: 100%;
+      color: #c6c6c6;
+      z-index: 9;
+    } */
 
     .gradient-box{ /* 상단 그라디언트 라인 플렉스박스 */
       display: flex;
@@ -159,15 +206,21 @@ body{
     }
 
     .Mainscreen2{
-      margin-top: 140px;
+      display: block;
+      width: 100%;
+      height: 1435px;
+      /* border: 2px solid #ff0000; */
     }
+
 .flex1{
   /* border: 3px solid #ff0000; */
   color: #ffffff;
   display: flex;
+  position: relative;
   gap: 10px;
-  position: static;
+  /* position: static; */
   padding-left: 187px;
+  top: 140px;
 }
 .itembox1{
   font-family: musi;
