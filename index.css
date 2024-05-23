@@ -25,7 +25,7 @@ body{
 .musinsa {
   color: #ffffff;
   font-family: musi;
-  font-size: 32px;
+  font-size: 40px;
   position: absolute;
   width: 100%;
   top: 35px;
@@ -50,7 +50,7 @@ body{
 
 .container{ /* 상단 메인카테고리 세부속성*/
   font-family: musi;
-  font-size: 16px;
+  font-size: 20px;
   color: rgb(255, 255, 255);
   position: absolute;
   top: 103px;
@@ -201,20 +201,20 @@ body{
     .Mainscreen2{
       display: block;
       width: 100%;
-      height: 1713px;
-      /* border: 2px solid #ff0000; */
+      height: 856.5px;
+      box-sizing: content-box;
+      border: 2px solid #ffffff;
     }
 
 .wishlist{
-  /* border: 3px solid #ff0000; */
+  /* border: 3px solid #00ff59; */
   color: #ffffff;
   display: flex;
   position: relative;
   gap: 10px;
-  /* position: static; */
   padding-left: 187px;
-  /* top: 140px; */
   margin-top: 140px;
+  height: 95px;
 }
 .itembox1{
   font-family: musi;
@@ -250,15 +250,13 @@ body{
   color: #999999;
 }
 
-
-
-
-.product-box{
-  position: static;
-  margin-left: 0px;
-  position: absolute;
-  margin-top: 110px;
-  /* border: 3px solid red; */
+.pro-box{
+  display: flex;
+  height: 550px;
+  /* border: 3px solid black; */
+  margin-top: 14px;
+  margin-left: 187px;
+  gap: 10px;
 }
 .image-container {
   width: 379px;
@@ -267,8 +265,7 @@ body{
   justify-content: center;
   align-items: center;
   background-color: #F1F1F1;
-  border-radius: 8px;
-  overflow: hidden;
+  /* border-radius: 8px; */
   /* border: 3px solid #ff0000; */
 }
 .image-container img {
@@ -288,6 +285,7 @@ body{
   font-family: pre;
   font-weight: 600;
   font-size: 18px
+  
 }
 .product-info .name {
   color: #000000;
@@ -324,6 +322,16 @@ body{
   height: 100%;
   /* border: 3px solid rgb(7, 149, 0); */
 }
+.pri3{
+  font-family: pre;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.pri4{
+  font-family: pre;
+  font-weight: 600;
+  margin-top: 20px;
+}
 .product-info .reviews {
   color: #999999;
   margin-top: 10px;
@@ -331,16 +339,28 @@ body{
   font-weight: 500;
   font-size: 13px
 }
-
+/*--------------------------메인10---------------------------*/
+.Mainscreen10{
+  display: block;
+  width: 100%;
+  height: 856.5px;
+  border: 5px solid #ffffff;
+}
 /* 비슷한 연령대 포멀어반 */
 .Similarage{ 
   display: flex;
   flex-direction: column;
   position: absolute;
   gap: 10px;
-  margin-top: 797px;
+  margin-top: 80.5px;
   margin-left: 187px;
   /* border: 3px solid #ff0000; */
+}
+.pro-box2{
+  margin-left: 187px;
+  margin-top: 168.5px;
+  display: flex;
+  gap: 10px;
 }
 .itembox2{
   font-family: musi;
@@ -353,18 +373,27 @@ body{
   color: #0066FF;
 }
 .price2{
+  /* border: 2px solid #ff0000; */
   color: #000000;
   margin-top: 20px;
   font-family: pre;
   font-weight: 600;
   font-size: 16px
 }
+.price3{
+    /* border: 2px solid #ff0000; */
+    color: #000000;
+    margin-top: 40px;
+    font-family: pre;
+    font-weight: 600;
+    font-size: 16px
+}
 /*--------------------------메인3----------------------------*/
 .Mainscreen3{
   display: block;
   width: 100%;
   height: 680px;
-  /* border: 2px solid #ff0000; */
+  border: 2px solid #ff0000;
 }
 .imgbanner{
   width: 100%;
@@ -374,7 +403,7 @@ body{
   display: block;
   width: 100%;
   height: 1090px;
-  border: 2px solid #ff0000;
+  border: 2px solid #00c3ff;
 }
 /*---------------------------메인5----------------------------*/
 .Mainscreen5{
@@ -454,7 +483,84 @@ body{
   display: block;
   width: 100%;
   height: 1080px;
-  border: 2px solid #ff0000;
+  /* border: 2px solid #006eff; */
+}
+.showcase{
+  /* border: 3px solid red; */
+  display: flex;
+  gap: 57px;
+  margin-left: 72px;
+  margin-top: 28px;
+}
+.showcase1{
+  width: 863px;
+  height: 1012px;
+  /* border: 3px solid red; */
+}
+
+.s000{
+  width: 863px;
+  height: 333px;
+  /* border: 3px solid red; */
+  margin-top: -50px;
+}
+.banner2 {
+
+  display: flex;
+  width: 646px;
+  height: 82px;
+  /* border: 3px solid red; */
+}
+
+.left-box {
+  font-family: pre;
+  font-size: 32px;
+  font-weight: 500;
+  width: 152px;
+  background-color: #2930FF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-box {
+  font-family: pre;
+  font-size: 32px;
+  font-weight: 500;
+  flex-grow: 1;
+  background-color: #0078FF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.S1{
+  margin-top: 40px;
+  font-family: pre;
+  font-size: 28px;
+  font-weight: 500;
+}
+.S2{
+  margin-top: 10px;
+  font-family: pre;
+  font-size: 47px;
+  font-weight: 600;
+
+}
+.S3{
+  margin-top: 20px;
+  font-family: pre;
+  font-size: 28px;
+  font-weight: 500;
+  color: #999999;
+}
+.S4{
+  margin-top: 20px;
+  font-family: pre;
+  font-size: 28px;
+  font-weight: 600;
+  color: #0066FF;
 }
 /*---------------------------메인7----------------------------*/
 .Mainscreen7{
@@ -483,4 +589,142 @@ body{
   font-size: 16px;
   margin-top: 15px;
   color: #808080;
+}
+/*---------------------------메인8----------------------------*/
+.Mainscreen8{
+  display: block;
+  width: 100%;
+  height: 550px;
+  border: 2px solid #ff0000;
+}
+.footer{
+  width: 100%;
+  height: 550px;
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+}
+.footer-head{
+  position: absolute;
+  display: flex;
+  margin-left: 50px;
+  gap: 300px;
+  margin-top: 50px;
+}
+.H1{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #ffffff;
+  
+}
+.h1{
+  font-family: pre;
+  font-size: 24px;
+  font-weight: 500;
+}
+.H2{
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  color: #fff; 
+}
+.h2{
+  font-family: pre;
+  font-size: 16px;
+  font-weight: 500;
+  color: #808080;
+}
+.H3{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+.F1{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 343px;
+  margin-left: 50px;
+}
+.f1{
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  font-family: pre;
+  margin-top: 5px;
+}
+.f-1{
+  font-weight: 500;
+  font-size: 16px;
+  color: #808080;
+  margin-top: 7px;
+}
+.F2{
+  position: absolute;
+  display: flex;
+  gap: 30px;
+  margin-top: 399px;
+  margin-left: 1447px;
+}
+.f2{
+  font-size: 16px;
+  color: #808080;
+}
+.F-line{
+  position: absolute;
+  margin-top: 430px;
+  width: 1820px;
+  height: 0;
+  border-top: 1px solid #808080;
+  margin-left: 50px;
+}
+.F3{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: #808080;
+  margin-left: 50px;
+  margin-top: 452px;
+  gap: 5px;
+}
+.f3{
+  font-family: pre;
+  font-size: 16px;
+  font-weight: 500;
+}
+.f3-flex{
+  display: flex;
+  gap: 10px;
+}
+.f3-flex2{
+  display: flex;
+  gap: 10px;
+}
+.f-3{
+  color: #fff;
+}
+.F4{
+  gap: 33px;
+  margin-left: 1159px;
+  margin-top: 452px;
+  position: absolute;
+  flex-direction: column;
+  display: flex
+}
+.f4{
+  color: #fff;
+  font-family: pre;
+  font-size: 16px;
+  font-weight: 500;
+}
+.f-4{
+  color: #808080;
+  font-family: pre;
+  font-size: 16px;
+  font-weight: 500;
+}
+.f4-flex{
+  display: flex;
+  gap: 10px;
 }
