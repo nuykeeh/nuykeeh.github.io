@@ -486,6 +486,7 @@ body{
   color: #000000;
 }
 .category2{
+  gap: 8px;
   display: flex;
   flex-direction: row;
   position: absolute;
