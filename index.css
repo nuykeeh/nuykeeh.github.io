@@ -408,12 +408,24 @@ body{
 .specialh1{ 
   position: absolute;
   margin-top: 130px;
-  margin-left: 804px;
   font-family: pre;
   font-size: 52px;
   font-weight: 300;
   color: #0066FF;
   letter-spacing: 15.6px;
+}
+.flexbox{
+  display: flex;
+  justify-content: center;
+}
+.specialh2{
+  position: absolute;
+  margin-top: 215px;
+  font-family: pre;
+  letter-spacing: 10px;
+  font-weight: 500;
+  font-size: 28px;
+  color: #000000;
 }
 .V1{
   display: flex;
@@ -553,8 +565,9 @@ body{
 .showcase{
   /* border: 3px solid red; */
   display: flex;
+  justify-content: center;
   gap: 57px;
-  margin-left: 72px;
+  /* margin-left: 72px; */
   margin-top: 28px;
 }
 .showcase1{
