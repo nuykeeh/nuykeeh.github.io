@@ -11,7 +11,6 @@ body{
   src: url(./font/PretendardVariable.ttf);
 }
 *{margin: 0;}
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -172,7 +171,7 @@ body{
       align-items: center;
       justify-content: center;
       /* border: 3px solid #ff0000; */
-      top: 60%
+      top: 500px
     }
     .line-gradient { /* 상단 그라디언트 라인  */
       width: 800px;
@@ -185,10 +184,9 @@ body{
     .img1{
       /* border: 3px solid #ff0; */
       position: absolute;
-      top: 50%;
+      top: 400px;
       left: 50%;
       transform: translate(-50%,-50%);
-      /* margin: 0 auto; */
       width: 615px;
       height: 839px;
       z-index: 2;
@@ -805,4 +803,10 @@ body{
 .f4-flex{
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 1919px) and (max-height: 1079px) {
+  /* 1920x1080 이상이 아닌 경우 */
+  body {
+    display: none;
+  }
 }
