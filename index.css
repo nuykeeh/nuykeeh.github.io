@@ -819,6 +819,10 @@ body{
   display: flex;
   gap: 10px;
 }
+#noto{
+  width: 1470px;
+  height: 6440px;
+}
 @media screen and (max-width: 1500px) {
   /* 1920x1080 이상이 아닌 경우 */
   #master {
