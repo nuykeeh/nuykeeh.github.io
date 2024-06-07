@@ -20,6 +20,21 @@ body{
   height: 1080px;
   /* border: 2px solid #ff0000; */
 }
+#master {
+  display: block;
+  position: relative;
+}
+#small {
+
+  display: none;
+  overflow: hidden;
+}
+#small2 {
+
+  display: none;
+  overflow: hidden;
+}
+
 
 .musinsa {
   color: #ffffff;
@@ -804,9 +819,23 @@ body{
   display: flex;
   gap: 10px;
 }
-@media screen and (max-width: 1919px) and (max-height: 1079px) {
+@media screen and (max-width: 1500px) {
   /* 1920x1080 이상이 아닌 경우 */
-  body {
+  #master {
     display: none;
+  }
+  #small {
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  #master {
+    display: none;
+  }
+  #small {
+    display: none;
+  }
+  #small2 {
+    display: block;
   }
 }
