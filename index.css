@@ -29,7 +29,7 @@ body{
   display: none;
   overflow: hidden;
 }
-#small2 {
+#iphone {
 
   display: none;
   overflow: hidden;
@@ -828,16 +828,14 @@ body{
     display: block;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
   #master {
     display: none;
   }
   #small {
     display: none;
   }
-  #tlqkf {
+  #iphone {
     display: block;
-    position: relative;
-    margin: 0 auto;
   }
 }
