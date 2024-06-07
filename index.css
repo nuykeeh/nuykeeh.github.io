@@ -823,6 +823,10 @@ body{
   width: 1470px;
   height: 6440px;
 }
+#min{
+  width: 375px;
+  height: 5681px;
+}
 @media screen and (max-width: 1500px) {
   /* 1920x1080 이상이 아닌 경우 */
   #master {
