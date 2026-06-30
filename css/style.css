@@ -1,0 +1,213 @@
+:root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --accent: #555555;
+    --border: #e0e0e0;
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    --transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; text-transform: uppercase; letter-spacing: -0.02em; }
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+
+/* Layout Containers */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+    .container { padding: 0 20px; }
+}
+
+/* Header & GNB */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.nav-links a:hover { opacity: 1; }
+
+/* Animated Text Block (ag.co.kr style) */
+.hero-marquee {
+    margin-top: 80px;
+    padding: 100px 0 60px;
+    border-bottom: 1px solid var(--border);
+}
+
+.marquee-wrapper {
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.marquee-text {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-family: var(--font-heading);
+    white-space: nowrap;
+    position: absolute;
+    will-change: transform;
+}
+
+/* Hero Carousel */
+.hero-carousel {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-slide img, .placeholder-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #f0f0f0;
+}
+
+.slide-info {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    color: white;
+    z-index: 10;
+    mix-blend-mode: difference;
+}
+
+.slide-info h2 { font-size: 3rem; margin-bottom: 10px; }
+
+/* 3-Column Grid (Archive) */
+.archive {
+    padding: 120px 0;
+}
+
+.archive-header {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.archive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+}
+
+.project-card {
+    cursor: pointer;
+}
+
+.project-thumb {
+    aspect-ratio: 4/5;
+    background: #f7f7f7;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-meta {
+    font-size: 0.85rem;
+    color: var(--accent);
+    margin-bottom: 5px;
+}
+
+.project-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .archive-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+    .archive-grid { grid-template-columns: 1fr; }
+}
+
+/* Footer */
+footer {
+    padding: 100px 0 40px;
+    border-top: 1px solid var(--border);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-info p { font-size: 1.5rem; font-weight: 600; margin-bottom: 20px; }
